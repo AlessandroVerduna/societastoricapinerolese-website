@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Collabora con noi - Progetto Storiografico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Progetto Storiografico</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="materiale.html">Materiale storiografico</a>
+        <a href="collabora.html">Collabora con noi</a>
+        <a href="eventi.html">Eventi</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Apri menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Collabora con noi</h1>
+    <p>Accogliamo volontari, ricercatori e donazioni di materiale. Ecco come puoi contribuire.</p>
+
+    <section>
+      <h2>Volontariato</h2>
+      <p>Se vuoi aiutarci nella digitalizzazione o catalogazione, scrivici indicando la tua disponibilità.</p>
+    </section>
+
+    <section>
+      <h2>Donazioni di materiale</h2>
+      <p>Accettiamo documenti, fotografie e pubblicazioni. Indica il tipo di materiale e lo stato di conservazione.</p>
+    </section>
+
+    <section>
+      <h2>Modulo di contatto</h2>
+      <form action="#" method="post" class="contact-form">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="messaggio">Messaggio</label>
+        <textarea id="messaggio" name="messaggio" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Invia</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Progetto Storiografico</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

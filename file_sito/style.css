@@ -1,0 +1,169 @@
+:root{
+  --bg:#f7f7f7;
+  --card:#ffffff;
+  --accent:#2b6cb0;
+  --muted:#666;
+  --dark:#222;
+  --max-width:1100px;
+  --radius:8px;
+  --gap:18px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--dark);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:20px;
+}
+
+/* Header */
+.site-header{
+  background:linear-gradient(90deg,var(--accent),#1f4f7a);
+  color:#fff;
+}
+.site-header .container{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.brand{
+  font-weight:700;
+  color:#fff;
+  text-decoration:none;
+  font-size:1.1rem;
+}
+.main-nav{
+  margin-left:auto;
+  display:flex;
+  gap:14px;
+}
+.main-nav a{
+  color:#fff;
+  text-decoration:none;
+  padding:10px 6px;
+  border-radius:6px;
+}
+.main-nav a:hover{background:rgba(255,255,255,0.06)}
+.nav-toggle{
+  display:none;
+  background:transparent;
+  border:0;
+  color:#fff;
+  font-size:1.2rem;
+  cursor:pointer;
+}
+
+/* Hero */
+.hero{
+  background:var(--card);
+  margin-top:20px;
+  padding:28px;
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(20,20,20,0.04);
+}
+.hero h1{margin:0 0 8px 0}
+.cta{
+  display:inline-block;
+  background:var(--accent);
+  color:#fff;
+  padding:10px 14px;
+  border-radius:6px;
+  text-decoration:none;
+}
+
+/* Sections */
+.intro, .highlights, .events-list{
+  margin-top:var(--gap);
+}
+.highlights{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
+}
+.highlights article{
+  background:var(--card);
+  padding:16px;
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(20,20,20,0.03);
+}
+
+/* Sub navigation for materiale */
+.sub-nav{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:12px 0 18px 0;
+}
+.sub-nav a{
+  background:#fff;
+  padding:8px 10px;
+  border-radius:6px;
+  text-decoration:none;
+  color:var(--accent);
+  border:1px solid #e6e6e6;
+}
+
+/* Forms */
+.contact-form{
+  display:grid;
+  gap:10px;
+  max-width:640px;
+}
+.contact-form input,
+.contact-form textarea{
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:6px;
+  background:#fff;
+}
+.btn{
+  background:var(--accent);
+  color:#fff;
+  padding:10px 14px;
+  border-radius:6px;
+  border:0;
+  cursor:pointer;
+}
+
+/* Footer */
+.site-footer{
+  margin-top:30px;
+  background:#111;
+  color:#fff;
+  padding:14px 0;
+  font-size:0.95rem;
+}
+.site-footer a{color:#ddd; text-decoration:none}
+
+/* Responsive */
+@media (max-width:800px){
+  .main-nav{display:none; position:absolute; right:20px; top:64px; background:var(--card); padding:12px; border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,0.12)}
+  .main-nav.open{display:flex; flex-direction:column; width:200px}
+  .nav-toggle{display:inline-block; margin-left:12px}
+  .site-header .container{position:relative}
+}
+
+/* Footer social + credit */
+.footer-inner{display:flex;flex-direction:column;gap:12px;align-items:center}
+.social-and-credit{display:flex;flex-direction:column;gap:10px;align-items:center}
+.social-links{display:flex;gap:12px}
+.social-links a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:8px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.08);text-decoration:none}
+.social-links a:hover{background:rgba(255,255,255,0.06);transform:translateY(-2px);transition:all .15s ease}
+.site-credit{color:#ddd;text-align:center;font-size:0.95rem}
+.site-credit strong{color:#fff}
+
+/* Team grid for Chi siamo */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;list-style:none;padding:0;margin:0}
+.team-card{background:var(--card);padding:14px;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;box-shadow:0 6px 18px rgba(20,20,20,0.04)}
+.team-card img{width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:12px}
+.team-card h3{margin:0;font-size:1.05rem}
+.team-card p{margin:6px 0 0 0;color:var(--muted);font-size:0.95rem}

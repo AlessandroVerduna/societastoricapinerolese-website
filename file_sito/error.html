@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Errore - Pagina non trovata</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Progetto Storiografico</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="materiale.html">Materiale storiografico</a>
+        <a href="collabora.html">Collabora con noi</a>
+        <a href="eventi.html">Eventi</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Apri menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Pagina non trovata</h1>
+      <p>La pagina che stai cercando potrebbe essere stata rimossa, rinominata o non è disponibile.</p>
+      <p><a class="cta" href="index.html">Torna alla Home</a></p>
+    </section>
+
+    <section class="intro">
+      <h2>Possibili cause</h2>
+      <ul>
+        <li>Hai digitato un indirizzo errato</li>
+        <li>Il contenuto è stato spostato</li>
+        <li>Il link che hai seguito non è più valido</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Progetto Storiografico</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

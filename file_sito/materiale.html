@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Materiale storiografico - Progetto Storiografico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Progetto Storiografico</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="materiale.html">Materiale storiografico</a>
+        <a href="collabora.html">Collabora con noi</a>
+        <a href="eventi.html">Eventi</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Apri menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Materiale storiografico</h1>
+
+    <nav class="sub-nav">
+      <a href="#pubblicazioni">Pubblicazioni</a>
+      <a href="#indice-bollettini">Indice Bollettini</a>
+      <a href="#indice-biblioteca">Indice Biblioteca Sociale</a>
+      <a href="#archivio-regesti">Archivio Regesti</a>
+    </nav>
+
+    <section id="pubblicazioni">
+      <h2>Pubblicazioni</h2>
+      <p>Elenco delle pubblicazioni prodotte dal progetto e da collaboratori. Ogni voce contiene abstract e link per il download quando disponibile.</p>
+      <ul>
+        <li><strong>Storia Locale</strong> — A. Autore, 2020 — <a href="#">Scarica PDF</a></li>
+        <li><strong>Ricerche e Documenti</strong> — B. Curatore, 2019 — <a href="#">Scarica PDF</a></li>
+      </ul>
+    </section>
+
+    <section id="indice-bollettini">
+      <h2>Indice Bollettini</h2>
+      <p>Indice cronologico dei bollettini pubblicati dal progetto e dai partner.</p>
+      <p><a href="#">Vai all'indice completo</a></p>
+    </section>
+
+    <section id="indice-biblioteca">
+      <h2>Indice Biblioteca Sociale</h2>
+      <p>Catalogo della biblioteca sociale con segnatura, autore e disponibilità.</p>
+      <p><a href="#">Consulta il catalogo</a></p>
+    </section>
+
+    <section id="archivio-regesti">
+      <h2>Archivio Regesti</h2>
+      <p>Regesti e inventari digitalizzati per la consultazione e la ricerca storica.</p>
+      <p><a href="#">Accedi all'archivio</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Progetto Storiografico</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

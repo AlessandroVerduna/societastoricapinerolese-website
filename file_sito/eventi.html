@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Eventi - Progetto Storiografico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Progetto Storiografico</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="materiale.html">Materiale storiografico</a>
+        <a href="collabora.html">Collabora con noi</a>
+        <a href="eventi.html">Eventi</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Apri menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Eventi</h1>
+    <p>Calendario degli eventi, seminari e presentazioni organizzate dal progetto.</p>
+
+    <section class="events-list">
+      <article class="event">
+        <h2>Seminario su fonti locali</h2>
+        <p class="meta">10 Marzo 2026 — Sala Consiliare</p>
+        <p>Presentazione delle nuove acquisizioni e discussione con i ricercatori.</p>
+      </article>
+
+      <article class="event">
+        <h2>Giornata di digitalizzazione</h2>
+        <p class="meta">24 Aprile 2026 — Biblioteca Comunale</p>
+        <p>Volontari e studenti sono invitati a partecipare alle attività di digitalizzazione.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Progetto Storiografico</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

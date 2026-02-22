@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Home - Progetto Storiografico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Società Storica Pinerolese</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="materiale.html">Materiale storiografico</a>
+        <a href="collabora.html">Collabora con noi</a>
+        <a href="eventi.html">Eventi</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Apri menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Esplora tutto il nostro materiale su GitHub</h1>
+      <p>Raccolta, catalogazione e diffusione di materiale storico e storiografico per la comunità.</p>
+      <p><a class="cta" href="materiale.html">Esplora il materiale</a></p>
+    </section>
+
+    <section class="intro">
+      <h2>Missione</h2>
+      <p>Conservare e rendere accessibile documentazione storica, promuovendo ricerca e partecipazione.</p>
+    </section>
+
+    <section class="highlights">
+      <article>
+        <h3>Pubblicazioni</h3>
+        <p>Monografie, saggi e studi disponibili per consultazione e download.</p>
+      </article>
+      <article>
+        <h3>Archivio Regesti</h3>
+        <p>Regesti e inventari digitalizzati per la ricerca storica.</p>
+      </article>
+      <article>
+        <h3>Eventi</h3>
+        <p>Seminari, presentazioni e incontri aperti al pubblico.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Progetto Storiografico</p>
+      <p><a href="privacy.html" class="muted">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Minimal mobile nav toggle
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

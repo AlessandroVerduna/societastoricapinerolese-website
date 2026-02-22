@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chi siamo - Progetto Storiografico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Società Storica Pinerolese</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi siamo</a>
+        <a href="materiale.html">Materiale storiografico</a>
+        <a href="collabora.html">Collabora con noi</a>
+        <a href="eventi.html">Eventi</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Apri menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Chi siamo</h1>
+      <p>Siamo un gruppo di ricercatori, archivisti e volontari impegnati nella conservazione della memoria storica locale e nazionale.</p>
+    </section>
+
+    <section>
+      <h2>Il nostro team</h2>
+      <ul class="team-list">
+        <li><strong>Dr. Maria Rossi</strong> — Coordinamento scientifico</li>
+        <li><strong>Prof. Luca Bianchi</strong> — Archivistica</li>
+        <li><strong>Volontari</strong> — Digitalizzazione e catalogazione</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contatti</h2>
+      <p>Email: <a href="mailto:info@progettostoriografico.it">info@progettostoriografico.it</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Progetto Storiografico</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+
+  <section>
+  <h2>Il nostro team</h2>
+  <ul class="team-grid" aria-label="Team">
+    <li class="team-card">
+      <img src="images/team1.jpg" alt="Maria Rossi">
+      <h3>Dr. Maria Rossi</h3>
+      <p>Coordinamento scientifico</p>
+    </li>
+    <li class="team-card">
+      <img src="images/team2.jpg" alt="Luca Bianchi">
+      <h3>Prof. Luca Bianchi</h3>
+      <p>Archivistica</p>
+    </li>
+    <li class="team-card">
+      <img src="images/team3.jpg" alt="Volontario 1">
+      <h3>Giulia Verdi</h3>
+      <p>Digitalizzazione</p>
+    </li>
+    <li class="team-card">
+      <img src="images/team4.jpg" alt="Volontario 2">
+      <h3>Marco Neri</h3>
+      <p>Catalogazione</p>
+    </li>
+  </ul>
+</section>
+
+  <footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="social-and-credit">
+      <div class="social-links" aria-label="Link ai social">
+        <a href="https://www.instagram.com/tuo-profilo" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <!-- Instagram SVG -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.2"/><path d="M17.5 6.5h.01" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/tuo-profilo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <!-- LinkedIn SVG -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M7 10v7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="7" cy="7.5" r="1.2" fill="currentColor"/><path d="M11 10v7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M11 13.5c1.2-1.8 4-1.9 4 0V17" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </a>
+        <a href="https://github.com/tuo-profilo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <!-- GitHub SVG -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C8.1 2 5 5.1 5 9c0 3 2 5.5 4.8 6.4.4.1.5-.2.5-.4v-1.4c-2 .4-2.5-.9-2.5-.9-.3-.8-.8-1- .8-1-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.2 1.8.9 2.2.7.1-.5.3-.9.6-1.1-1.6-.2-3.3-.8-3.3-3.6 0-.8.3-1.4.8-1.9-.1-.2-.4-1 .1-2 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.5 1 .2 1.8.1 2 .5.5.8 1.1.8 1.9 0 2.8-1.7 3.4-3.3 3.6.3.3.6.8.6 1.6v2.4c0 .2.1.5.6.4C17 14.5 19 12 19 9c0-3.9-3.1-7-7-7z" stroke="currentColor" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://www.facebook.com/tuo-profilo" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <!-- Facebook SVG -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 8h2.5V5.5H15c-1.1 0-2 .9-2 2V10H11v2h2v6h2v-6h1.5l.5-2H15V7.5c0-.3.2-.5.5-.5z" stroke="currentColor" stroke-width="0.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="site-credit">
+        <p>© 2026 Progetto Storiografico</p>
+        <p>Site realizzato e manutenuto da <strong>Alessandro Verduna</strong></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
