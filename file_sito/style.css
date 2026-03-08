@@ -146,10 +146,39 @@ body{
 
 /* Responsive */
 @media (max-width:800px){
-  .main-nav{display:none; position:absolute; right:20px; top:64px; background:var(--card); padding:12px; border-radius:8px; box-shadow:0 8px 24px rgba(0,0,0,0.12)}
-  .main-nav.open{display:flex; flex-direction:column; width:200px}
-  .nav-toggle{display:inline-block; margin-left:12px}
-  .site-header .container{position:relative}
+
+  /* Menu mobile nascosto */
+  .main-nav{
+    display:none;
+    position:absolute;
+    right:20px;
+    top:64px;
+    background:var(--card);
+    padding:12px;
+    border-radius:8px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.12);
+    flex-direction:column;
+    width:200px;
+  }
+
+  /* Menu mobile aperto */
+  .main-nav.open{
+    display:flex;
+  }
+
+  /* Link leggibili su sfondo bianco */
+  .main-nav a{
+    color:var(--dark);
+  }
+
+  .nav-toggle{
+    display:inline-block;
+    margin-left:12px;
+  }
+
+  .site-header .container{
+    position:relative;
+  }
 }
 
 /* Footer social + credit */
@@ -161,7 +190,7 @@ body{
 .site-credit{color:#ddd;text-align:center;font-size:0.95rem}
 .site-credit strong{color:#fff}
 
-/* Team grid for Chi siamo */
+/* Team grid */
 .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;list-style:none;padding:0;margin:0}
 .team-card{background:var(--card);padding:14px;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;box-shadow:0 6px 18px rgba(20,20,20,0.04)}
 .team-card img{width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:12px}
