@@ -184,9 +184,10 @@ body{
 /* Footer social + credit */
 .footer-inner{display:flex;flex-direction:column;gap:12px;align-items:center}
 .social-and-credit{display:flex;flex-direction:column;gap:10px;align-items:center}
-.social-links{display:flex;gap:12px}
-.social-links a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:8px;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.08);text-decoration:none}
-.social-links a:hover{background:rgba(255,255,255,0.06);transform:translateY(-2px);transition:all .15s ease}
+.social-links {
+  display:flex;
+  gap:12px;
+}
 .site-credit{color:#ddd;text-align:center;font-size:0.95rem}
 .site-credit strong{color:#fff}
 
