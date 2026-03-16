@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Materiale storiografico - Società Storica Pinerolese</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- ============================================================
+    HEADER
+    Barra superiore con logo e menu di navigazione principale.
+    Identico in tutte le pagine del sito.
+    ============================================================ -->
   <header class="site-header">
     <div class="container">
+
+      <!-- Logo testuale: cliccabile, riporta alla homepage -->
       <a class="brand" href="index.html">Società Storica Pinerolese</a>
+
+      <!-- Menu principale — su mobile viene nascosto via CSS
+           e mostrato aggiungendo la classe .open con JS -->
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="chi-siamo.html">Chi siamo</a>
@@ -17,13 +30,27 @@
         <a href="collabora.html">Collabora con noi</a>
         <a href="eventi.html">Eventi</a>
       </nav>
+
+      <!-- Pulsante hamburger: visibile solo su schermi piccoli -->
       <button class="nav-toggle" aria-label="Apri menu">☰</button>
+
     </div>
   </header>
 
+
+  <!-- ============================================================
+    MAIN
+    Contenuto principale della pagina.
+    flex: 1 nel CSS garantisce che il footer resti sempre in fondo.
+    ============================================================ -->
   <main class="container">
+
     <h1>Materiale storiografico</h1>
 
+    <!-- Sub-navigazione -------------------------------------------
+      Link ancòra alle sezioni della pagina, per saltare
+      direttamente alla categoria di materiale desiderata.
+    --------------------------------------------------------------- -->
     <nav class="sub-nav">
       <a href="#pubblicazioni">Pubblicazioni</a>
       <a href="#indice-bollettini">Indice Bollettini</a>
@@ -31,67 +58,96 @@
       <a href="#archivio-regesti">Archivio Regesti</a>
     </nav>
 
+    <!-- Pubblicazioni ---------------------------------------------
+      Elenco delle pubblicazioni prodotte dalla società
+      e dai collaboratori, con abstract e link al PDF.
+    --------------------------------------------------------------- -->
     <section id="pubblicazioni">
       <h2>Pubblicazioni</h2>
-      <p>Elenco delle pubblicazioni prodotte dal progetto e da collaboratori. Ogni voce contiene abstract e link per il download quando disponibile.</p>
+      <p>
+        Elenco delle pubblicazioni prodotte dal progetto e da collaboratori.
+        Ogni voce contiene abstract e link per il download quando disponibile.
+      </p>
       <ul>
         <li><strong>Storia Locale</strong> — A. Autore, 2020 — <a href="#">Scarica PDF</a></li>
         <li><strong>Ricerche e Documenti</strong> — B. Curatore, 2019 — <a href="#">Scarica PDF</a></li>
       </ul>
     </section>
 
+    <!-- Indice Bollettini -----------------------------------------
+      Indice cronologico di tutti i bollettini pubblicati
+      dalla società e dai partner nel corso degli anni.
+    --------------------------------------------------------------- -->
     <section id="indice-bollettini">
       <h2>Indice Bollettini</h2>
       <p>Indice cronologico dei bollettini pubblicati dal progetto e dai partner.</p>
       <p><a href="#">Vai all'indice completo</a></p>
     </section>
 
+    <!-- Indice Biblioteca Sociale ---------------------------------
+      Catalogo consultabile della biblioteca sociale,
+      con segnatura, autore e disponibilità dei volumi.
+    --------------------------------------------------------------- -->
     <section id="indice-biblioteca">
       <h2>Indice Biblioteca Sociale</h2>
       <p>Catalogo della biblioteca sociale con segnatura, autore e disponibilità.</p>
       <p><a href="#">Consulta il catalogo</a></p>
     </section>
 
+    <!-- Archivio Regesti ------------------------------------------
+      Raccolta di regesti e inventari digitalizzati
+      disponibili per la consultazione e la ricerca storica.
+    --------------------------------------------------------------- -->
     <section id="archivio-regesti">
       <h2>Archivio Regesti</h2>
       <p>Regesti e inventari digitalizzati per la consultazione e la ricerca storica.</p>
       <p><a href="#">Accedi all'archivio</a></p>
     </section>
+
   </main>
 
-  <footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="social-and-credit">
-      <div class="social-links" aria-label="Link ai social">
-        <a href="https://www.instagram.com/societastoricapinerolese/">
-          Instagram
-        </a>
-        <a href="https://www.linkedin.com/in/tuo-profilo">
-          Linkedin
-        </a>
-        <a href="https://github.com/societa-storica-pinerolese/societastoricapinerolese-documents">
-        GitHub  
-        </a>
-        <a href="https://www.facebook.com/p/Societa-storica-Pinerolese-100080433380857/">
-        Facebook  
-        </a>
-        <a href="mailto:societastorica.pin@gmail.com">
-          Email
-        </a>
-      </div>
 
-      <div class="site-credit">
-        <p>© 2026 Progetto Storiografico</p>
-        <p>Site realizzato e manutenuto da <strong>Alessandro Verduna</strong></p>
+  <!-- ============================================================
+    FOOTER
+    Barra inferiore con link ai social, email e crediti del sito.
+    ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="social-and-credit">
+
+        <!-- Link ai canali social e contatti -->
+        <nav class="social-links" aria-label="Link ai social">
+          <a href="https://www.instagram.com/societastoricapinerolese/">Instagram</a>
+          <a href="https://www.linkedin.com/in/tuo-profilo">LinkedIn</a>
+          <a href="https://github.com/societa-storica-pinerolese/societastoricapinerolese-documents">GitHub</a>
+          <a href="https://www.facebook.com/p/Societa-storica-Pinerolese-100080433380857/">Facebook</a>
+          <a href="mailto:societastorica.pin@gmail.com">Email</a>
+        </nav>
+
+        <!-- Copyright e crediti dello sviluppatore -->
+        <div class="site-credit">
+          <p>© 2026 Progetto Storiografico</p>
+          <p>Sito realizzato e manutenuto da <strong>Alessandro Verduna</strong></p>
+        </div>
+
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
+
+  <!-- ============================================================
+    SCRIPT — Menu mobile
+    Aggiunge/rimuove la classe .open sul <nav> quando si clicca
+    il pulsante hamburger, mostrando o nascondendo il menu.
+    ============================================================ -->
   <script>
-    document.querySelector('.nav-toggle').addEventListener('click', () => {
-      document.querySelector('.main-nav').classList.toggle('open');
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
     });
   </script>
+
 </body>
 </html>

@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chi siamo - Società Storica Pinerolese</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- ============================================================
+    HEADER
+    Barra superiore con logo e menu di navigazione principale.
+    Identico in tutte le pagine del sito.
+    ============================================================ -->
   <header class="site-header">
     <div class="container">
+
+      <!-- Logo testuale: cliccabile, riporta alla homepage -->
       <a class="brand" href="index.html">Società Storica Pinerolese</a>
+
+      <!-- Menu principale — su mobile viene nascosto via CSS
+           e mostrato aggiungendo la classe .open con JS -->
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="chi-siamo.html">Chi siamo</a>
@@ -17,22 +30,43 @@
         <a href="collabora.html">Collabora con noi</a>
         <a href="eventi.html">Eventi</a>
       </nav>
+
+      <!-- Pulsante hamburger: visibile solo su schermi piccoli -->
       <button class="nav-toggle" aria-label="Apri menu">☰</button>
+
     </div>
   </header>
 
+
+  <!-- ============================================================
+    MAIN
+    Contenuto principale della pagina.
+    flex: 1 nel CSS garantisce che il footer resti sempre in fondo.
+    ============================================================ -->
   <main class="container">
+
+    <!-- Presentazione dell'associazione ---------------------------
+      Descrizione della natura giuridica, degli obiettivi
+      e della storia della società.
+    --------------------------------------------------------------- -->
     <section>
       <h1>Chi siamo</h1>
-      <p>La <strong>Società Storica Pinerolese</strong> è un’associazione culturale senza fini di lucro dedicata allo studio, alla tutela e alla valorizzazione della storia del Pinerolese e delle sue comunità. 
-        Dal momento della sua fondazione, la Società riunisce studiosi, appassionati, archivisti e cittadini interessati a preservare e diffondere la memoria storica del territorio.
+      <p>
+        La <strong>Società Storica Pinerolese</strong> è un'associazione culturale senza fini di lucro
+        dedicata allo studio, alla tutela e alla valorizzazione della storia del Pinerolese e delle sue
+        comunità. Dal momento della sua fondazione, la Società riunisce studiosi, appassionati,
+        archivisti e cittadini interessati a preservare e diffondere la memoria storica del territorio.
       </p>
     </section>
 
+    <!-- Il team ---------------------------------------------------
+      Elenco dei membri del consiglio direttivo, del comitato
+      di redazione e dei revisori dei conti, con i rispettivi ruoli.
+    --------------------------------------------------------------- -->
     <section>
       <h2>Il nostro team</h2>
       <ul class="team-list">
-        <li><strong>Andrea Balbo</strong>— Presidente, Redattore, Membro del Comitato tecnico-scientifico</li>
+        <li><strong>Andrea Balbo</strong> — Presidente, Redattore, Membro del Comitato tecnico-scientifico</li>
         <li><strong>Paolo Cavallo</strong> — Vicepresidente, Segretario, Redattore, Membro del Comitato tecnico-scientifico</li>
         <li><strong>Piergiorgio Prina</strong> — Tesoriere</li>
         <li><strong>Margherita Drago</strong> — Consigliera</li>
@@ -48,46 +82,58 @@
       </ul>
     </section>
 
+    <!-- Contatti --------------------------------------------------
+      Indirizzo email principale per comunicazioni dirette.
+    --------------------------------------------------------------- -->
     <section>
       <h2>Contatti</h2>
       <p>Email: <a href="mailto:societastorica.pin@gmail.com">societastorica.pin@gmail.com</a></p>
     </section>
+
   </main>
 
-  <script>
-    document.querySelector('.nav-toggle').addEventListener('click', () => {
-      document.querySelector('.main-nav').classList.toggle('open');
-    });
-  </script>
 
+  <!-- ============================================================
+    FOOTER
+    Barra inferiore con link ai social, email e crediti del sito.
+    ============================================================ -->
   <footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="social-and-credit">
-      <div class="social-links" aria-label="Link ai social">
-        <a href="https://www.instagram.com/societastoricapinerolese/">
-          Instagram
-        </a>
-        <a href="https://www.linkedin.com/in/tuo-profilo">
-          Linkedin
-        </a>
-        <a href="https://github.com/societa-storica-pinerolese/societastoricapinerolese-documents">
-        GitHub  
-        </a>
-        <a href="https://www.facebook.com/p/Societa-storica-Pinerolese-100080433380857/">
-        Facebook  
-        </a>
-        <a href="mailto:societastorica.pin@gmail.com">
-          Email
-        </a>
-      </div>
+    <div class="container footer-inner">
+      <div class="social-and-credit">
 
-      <div class="site-credit">
-        <p>© 2026 Progetto Storiografico</p>
-        <p>Site realizzato e manutenuto da <strong>Alessandro Verduna</strong></p>
+        <!-- Link ai canali social e contatti -->
+        <nav class="social-links" aria-label="Link ai social">
+          <a href="https://www.instagram.com/societastoricapinerolese/">Instagram</a>
+          <a href="https://www.linkedin.com/in/tuo-profilo">LinkedIn</a>
+          <a href="https://github.com/societa-storica-pinerolese/societastoricapinerolese-documents">GitHub</a>
+          <a href="https://www.facebook.com/p/Societa-storica-Pinerolese-100080433380857/">Facebook</a>
+          <a href="mailto:societastorica.pin@gmail.com">Email</a>
+        </nav>
+
+        <!-- Copyright e crediti dello sviluppatore -->
+        <div class="site-credit">
+          <p>© 2026 Progetto Storiografico</p>
+          <p>Sito realizzato e manutenuto da <strong>Alessandro Verduna</strong></p>
+        </div>
+
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+
+
+  <!-- ============================================================
+    SCRIPT — Menu mobile
+    Aggiunge/rimuove la classe .open sul <nav> quando si clicca
+    il pulsante hamburger, mostrando o nascondendo il menu.
+    ============================================================ -->
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>

@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Eventi - Società Storica Pinerolese</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- ============================================================
+    HEADER
+    Barra superiore con logo e menu di navigazione principale.
+    Identico in tutte le pagine del sito.
+    ============================================================ -->
   <header class="site-header">
     <div class="container">
+
+      <!-- Logo testuale: cliccabile, riporta alla homepage -->
       <a class="brand" href="index.html">Società Storica Pinerolese</a>
+
+      <!-- Menu principale — su mobile viene nascosto via CSS
+           e mostrato aggiungendo la classe .open con JS -->
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="chi-siamo.html">Chi siamo</a>
@@ -17,108 +30,142 @@
         <a href="collabora.html">Collabora con noi</a>
         <a href="eventi.html">Eventi</a>
       </nav>
+
+      <!-- Pulsante hamburger: visibile solo su schermi piccoli -->
       <button class="nav-toggle" aria-label="Apri menu">☰</button>
+
     </div>
   </header>
 
+
+  <!-- ============================================================
+    MAIN
+    Contenuto principale della pagina.
+    flex: 1 nel CSS garantisce che il footer resti sempre in fondo.
+    ============================================================ -->
   <main class="container">
+
     <h1>Eventi</h1>
-    <p>Calendario degli eventi, seminari e presentazioni organizzate e/o partecipate dalla Società Storica Pinerolese</p>
+    <p>Calendario degli eventi, seminari e presentazioni organizzate e/o partecipate dalla Società Storica Pinerolese.</p>
 
-    <!-- Conferenze di Primavera 2026 -->
-<article class="event">
-  <h2>Conferenze di Primavera 2026</h2>
-  <p class="meta">22–29 Marzo e 11 Aprile 2026 — Pinerolo</p>
+    <!-- Conferenze di Primavera 2026 ------------------------------
+      Ciclo di eventi organizzati in collaborazione con la
+      Biblioteca Diocesana, il Civico Istituto Musicale Corelli
+      e le Aree Protette Alpi Cozie. Comprende conferenze,
+      visite guidate e un concerto.
+    --------------------------------------------------------------- -->
+    <article class="event">
+      <h2>Conferenze di Primavera 2026</h2>
+      <p class="meta">22–29 Marzo e 11 Aprile 2026 — Pinerolo</p>
 
-  <p>
-    Ciclo di conferenze, visite guidate e un concerto organizzati dalla
-    Società Storica Pinerolese in collaborazione con Biblioteca Diocesana
-    “G. Bonatto”, Civico Istituto Musicale Corelli e Aree Protette Alpi Cozie.
-  </p>
+      <p>
+        Ciclo di conferenze, visite guidate e un concerto organizzati dalla Società Storica Pinerolese
+        in collaborazione con Biblioteca Diocesana "G. Bonatto", Civico Istituto Musicale Corelli
+        e Aree Protette Alpi Cozie.
+      </p>
 
-  <!-- Elenco eventi -->
-  <h3>Programma degli incontri</h3>
-  <ul>
-    <li>
-      <strong>Domenica 22 marzo — Ore 16.30</strong><br>
-      <em>Commiato alle suore del Monastero della Visitazione</em><br>
-      Visita guidata alla chiesa conventuale a cura di Viviana Moretti
-      (storica dell’architettura, Università di Torino).
-    </li>
+      <!-- Programma dettagliato -----------------------------------
+        Ogni <li> rappresenta un singolo appuntamento con data,
+        luogo e descrizione dell'evento.
+      ------------------------------------------------------------- -->
+      <h3>Programma degli incontri</h3>
+      <ul>
 
-    <li>
-      <strong>Sabato 28 marzo — Ore 16.30</strong><br>
-      Biblioteca diocesana “G. Bonatto”<br>
-      Presentazione del volume <em>Santuari d’Italia. Piemonte e Valle d’Aosta</em>
-      a cura di Paolo Cozzo e Pierangelo Gentile (De Luca editori d’arte, 2025).
-    </li>
+        <li>
+          <strong>Domenica 22 marzo — Ore 16.30</strong><br>
+          <em>Commiato alle suore del Monastero della Visitazione</em><br>
+          Visita guidata alla chiesa conventuale a cura di Viviana Moretti
+          (storica dell'architettura, Università di Torino).
+        </li>
 
-    <li>
-      <strong>Domenica 29 marzo — Ore 16.30</strong><br>
-      <em>Commiato alle suore del Monastero della Visitazione</em><br>
-      Concerto del gruppo vocale e strumentale “Musas”
-      (musiche piemontesi del Settecento).
-    </li>
+        <li>
+          <strong>Sabato 28 marzo — Ore 16.30</strong><br>
+          Biblioteca diocesana "G. Bonatto"<br>
+          Presentazione del volume <em>Santuari d'Italia. Piemonte e Valle d'Aosta</em>
+          a cura di Paolo Cozzo e Pierangelo Gentile (De Luca editori d'arte, 2025).
+        </li>
 
-    <li>
-      <strong>Sabato 11 aprile — Ore 16.30</strong><br>
-      Biblioteca diocesana “G. Bonatto”<br>
-      Conferenza di Alberto Trombotto:<br>
-      <em>Stefano Cambiano e la Pinerolo della Belle Époque:
-      ingegneria tra tradizione e innovazione</em>.
-    </li>
-  </ul>
-</article>
+        <li>
+          <strong>Domenica 29 marzo — Ore 16.30</strong><br>
+          <em>Commiato alle suore del Monastero della Visitazione</em><br>
+          Concerto del gruppo vocale e strumentale "Musas"
+          (musiche piemontesi del Settecento).
+        </li>
 
-  <!-- Locandina come immagine -->
-  <figure>
-    <img src="locandina-primavera-2026.jpg"
-         alt="Locandina delle Conferenze di Primavera 2026"
-         style="max-width: 100%; height: auto; border: 1px solid #ccc;">
-  </figure>
+        <li>
+          <strong>Sabato 11 aprile — Ore 16.30</strong><br>
+          Biblioteca diocesana "G. Bonatto"<br>
+          Conferenza di Alberto Trombotto:<br>
+          <em>Stefano Cambiano e la Pinerolo della Belle Époque:
+          ingegneria tra tradizione e innovazione</em>.
+        </li>
 
-  <!-- Link al PDF -->
-  <p>
-    <a href="locandina-primavera-2026.pdf" target="_blank">
-      Scarica la locandina in PDF
-    </a>
-  </p>
+      </ul>
+
+      <!-- Locandina -----------------------------------------------
+        Immagine della locandina dell'evento con link al PDF
+        scaricabile. Il file deve trovarsi nella stessa cartella.
+      ------------------------------------------------------------- -->
+      <figure>
+        <img
+          src="locandina-primavera-2026.jpg"
+          alt="Locandina delle Conferenze di Primavera 2026"
+          style="max-width: 100%; height: auto; border: 1px solid #ccc;"
+        >
+      </figure>
+
+      <p>
+        <a href="locandina-primavera-2026.pdf" target="_blank">
+          Scarica la locandina in PDF
+        </a>
+      </p>
+
+    </article>
 
   </main>
 
-  <footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="social-and-credit">
-      <div class="social-links" aria-label="Link ai social">
-        <a href="https://www.instagram.com/societastoricapinerolese/">
-          Instagram
-        </a>
-        <a href="https://www.linkedin.com/in/tuo-profilo">
-          Linkedin
-        </a>
-        <a href="https://github.com/societa-storica-pinerolese/societastoricapinerolese-documents">
-        GitHub  
-        </a>
-        <a href="https://www.facebook.com/p/Societa-storica-Pinerolese-100080433380857/">
-        Facebook  
-        </a>
-        <a href="mailto:societastorica.pin@gmail.com">
-          Email
-        </a>
-      </div>
 
-      <div class="site-credit">
-        <p>© 2026 Progetto Storiografico</p>
-        <p>Site realizzato e manutenuto da <strong>Alessandro Verduna</strong></p>
+  <!-- ============================================================
+    FOOTER
+    Barra inferiore con link ai social, email e crediti del sito.
+    ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="social-and-credit">
+
+        <!-- Link ai canali social e contatti -->
+        <nav class="social-links" aria-label="Link ai social">
+          <a href="https://www.instagram.com/societastoricapinerolese/">Instagram</a>
+          <a href="https://www.linkedin.com/in/tuo-profilo">LinkedIn</a>
+          <a href="https://github.com/societa-storica-pinerolese/societastoricapinerolese-documents">GitHub</a>
+          <a href="https://www.facebook.com/p/Societa-storica-Pinerolese-100080433380857/">Facebook</a>
+          <a href="mailto:societastorica.pin@gmail.com">Email</a>
+        </nav>
+
+        <!-- Copyright e crediti dello sviluppatore -->
+        <div class="site-credit">
+          <p>© 2026 Progetto Storiografico</p>
+          <p>Sito realizzato e manutenuto da <strong>Alessandro Verduna</strong></p>
+        </div>
+
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
+
+  <!-- ============================================================
+    SCRIPT — Menu mobile
+    Aggiunge/rimuove la classe .open sul <nav> quando si clicca
+    il pulsante hamburger, mostrando o nascondendo il menu.
+    ============================================================ -->
   <script>
-    document.querySelector('.nav-toggle').addEventListener('click', () => {
-      document.querySelector('.main-nav').classList.toggle('open');
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
     });
   </script>
+
 </body>
 </html>

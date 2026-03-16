@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Collabora con noi - Società Storica Pinerolese</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- ============================================================
+    HEADER
+    Barra superiore con logo e menu di navigazione principale.
+    Identico in tutte le pagine del sito.
+    ============================================================ -->
   <header class="site-header">
     <div class="container">
+
+      <!-- Logo testuale: cliccabile, riporta alla homepage -->
       <a class="brand" href="index.html">Società Storica Pinerolese</a>
+
+      <!-- Menu principale — su mobile viene nascosto via CSS
+           e mostrato aggiungendo la classe .open con JS -->
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="chi-siamo.html">Chi siamo</a>
@@ -17,81 +30,126 @@
         <a href="collabora.html">Collabora con noi</a>
         <a href="eventi.html">Eventi</a>
       </nav>
+
+      <!-- Pulsante hamburger: visibile solo su schermi piccoli -->
       <button class="nav-toggle" aria-label="Apri menu">☰</button>
+
     </div>
   </header>
 
+
+  <!-- ============================================================
+    MAIN
+    Contenuto principale della pagina.
+    flex: 1 nel CSS garantisce che il footer resti sempre in fondo.
+    ============================================================ -->
   <main class="container">
+
     <h1>Collabora con noi</h1>
-    <p>La Società Storica Pinerolese accoglie con piacere volontari, ricercatori, studenti e cittadini interessati 
-       alla tutela e valorizzazione del patrimonio storico locale.
-       Collaborare con noi significa contribuire alla conservazione della memoria del territorio, partecipare a 
-       progetti culturali e sostenere attività di ricerca e divulgazione.
+
+    <!-- Introduzione ----------------------------------------------
+      Presentazione generale dell'opportunità di collaborazione,
+      rivolta a volontari, ricercatori, studenti e cittadini.
+    --------------------------------------------------------------- -->
+    <p>
+      La Società Storica Pinerolese accoglie con piacere volontari, ricercatori, studenti e cittadini
+      interessati alla tutela e valorizzazione del patrimonio storico locale. Collaborare con noi
+      significa contribuire alla conservazione della memoria del territorio, partecipare a progetti
+      culturali e sostenere attività di ricerca e divulgazione.
     </p>
 
+    <!-- Collaborazioni istituzionali ------------------------------
+      Descrive le possibilità di collaborazione con enti esterni:
+      scuole, università, associazioni e istituzioni culturali.
+    --------------------------------------------------------------- -->
     <section>
       <h2>Collaborazioni con enti, scuole e ricercatori</h2>
-      <p>La Società Storica Pinerolese collabora con scuole, università, enti culturali e associazioni del 
-         territorio per progetti di ricerca, mostre, conferenze e attività didattiche.
-         Siamo disponibili a valutare proposte di collaborazione scientifica o divulgativa.
+      <p>
+        La Società Storica Pinerolese collabora con scuole, università, enti culturali e associazioni
+        del territorio per progetti di ricerca, mostre, conferenze e attività didattiche.
+        Siamo disponibili a valutare proposte di collaborazione scientifica o divulgativa.
       </p>
     </section>
 
+    <!-- Come contattarci ------------------------------------------
+      Breve invito a usare il modulo per qualsiasi tipo
+      di proposta, offerta di materiale o richiesta di info.
+    --------------------------------------------------------------- -->
     <section>
       <h2>Come contattarci</h2>
-      <p>Per proporre una collaborazione, offrire materiale o chiedere informazioni, compila il modulo seguente. Ti risponderemo il prima possibile.</p>
+      <p>
+        Per proporre una collaborazione, offrire materiale o chiedere informazioni,
+        compila il modulo seguente. Ti risponderemo il prima possibile.
+      </p>
     </section>
 
+    <!-- Modulo di contatto ----------------------------------------
+      Form inviato tramite Formspree (servizio esterno).
+      I campi nome, email e messaggio sono tutti obbligatori.
+      L'attributo "action" punta all'endpoint Formspree del progetto.
+    --------------------------------------------------------------- -->
     <section>
-  <h2>Modulo di contatto</h2>
-  <form action="https://formspree.io/f/mpqyjkkw" method="POST" class="contact-form">
-    <label for="nome">Il tuo nome e cognome</label>
-    <input id="nome" name="nome" type="text" required>
+      <h2>Modulo di contatto</h2>
+      <form action="https://formspree.io/f/mpqyjkkw" method="POST" class="contact-form">
 
-    <label for="email">La tua Email</label>
-    <input id="email" name="email" type="email" required>
+        <label for="nome">Il tuo nome e cognome</label>
+        <input id="nome" name="nome" type="text" required>
 
-    <label for="messaggio">Messaggio</label>
-    <textarea id="messaggio" name="messaggio" rows="6" required></textarea>
+        <label for="email">La tua email</label>
+        <input id="email" name="email" type="email" required>
 
-    <button type="submit" class="btn">Invia</button>
-  </form>
+        <label for="messaggio">Messaggio</label>
+        <textarea id="messaggio" name="messaggio" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Invia</button>
+
+      </form>
     </section>
+
   </main>
 
-  <footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="social-and-credit">
-      <div class="social-links" aria-label="Link ai social">
-        <a href="https://www.instagram.com/societastoricapinerolese/">
-          Instagram
-        </a>
-        <a href="https://www.linkedin.com/in/tuo-profilo">
-          Linkedin
-        </a>
-        <a href="https://github.com/societa-storica-pinerolese/societastoricapinerolese-documents">
-        GitHub  
-        </a>
-        <a href="https://www.facebook.com/p/Societa-storica-Pinerolese-100080433380857/">
-        Facebook  
-        </a>
-        <a href="mailto:societastorica.pin@gmail.com">
-          Email
-        </a>
-      </div>
 
-      <div class="site-credit">
-        <p>© 2026 Progetto Storiografico</p>
-        <p>Site realizzato e manutenuto da <strong>Alessandro Verduna</strong></p>
+  <!-- ============================================================
+    FOOTER
+    Barra inferiore con link ai social, email e crediti del sito.
+    ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="social-and-credit">
+
+        <!-- Link ai canali social e contatti -->
+        <nav class="social-links" aria-label="Link ai social">
+          <a href="https://www.instagram.com/societastoricapinerolese/">Instagram</a>
+          <a href="https://www.linkedin.com/in/tuo-profilo">LinkedIn</a>
+          <a href="https://github.com/societa-storica-pinerolese/societastoricapinerolese-documents">GitHub</a>
+          <a href="https://www.facebook.com/p/Societa-storica-Pinerolese-100080433380857/">Facebook</a>
+          <a href="mailto:societastorica.pin@gmail.com">Email</a>
+        </nav>
+
+        <!-- Copyright e crediti dello sviluppatore -->
+        <div class="site-credit">
+          <p>© 2026 Progetto Storiografico</p>
+          <p>Sito realizzato e manutenuto da <strong>Alessandro Verduna</strong></p>
+        </div>
+
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
+
+  <!-- ============================================================
+    SCRIPT — Menu mobile
+    Aggiunge/rimuove la classe .open sul <nav> quando si clicca
+    il pulsante hamburger, mostrando o nascondendo il menu.
+    ============================================================ -->
   <script>
-    document.querySelector('.nav-toggle').addEventListener('click', () => {
-      document.querySelector('.main-nav').classList.toggle('open');
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('open');
     });
   </script>
+
 </body>
 </html>

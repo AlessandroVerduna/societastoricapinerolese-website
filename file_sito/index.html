@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home - Società Storica Pinerolese</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- ============================================================
+    HEADER
+    Barra superiore con logo e menu di navigazione principale.
+    Su mobile il menu è nascosto e viene aperto dal pulsante
+    hamburger (.nav-toggle) tramite lo script in fondo alla pagina.
+    ============================================================ -->
   <header class="site-header">
     <div class="container">
+
+      <!-- Logo testuale: cliccabile, riporta alla homepage -->
       <a class="brand" href="index.html">Società Storica Pinerolese</a>
+
+      <!-- Menu principale — su mobile viene nascosto via CSS
+           e mostrato aggiungendo la classe .open con JS -->
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="chi-siamo.html">Chi siamo</a>
@@ -17,78 +31,129 @@
         <a href="collabora.html">Collabora con noi</a>
         <a href="eventi.html">Eventi</a>
       </nav>
+
+      <!-- Pulsante hamburger: visibile solo su schermi piccoli -->
       <button class="nav-toggle" aria-label="Apri menu">☰</button>
+
     </div>
   </header>
 
+
+  <!-- ============================================================
+    MAIN
+    Contenuto principale della pagina.
+    La classe .container centra il contenuto e ne limita la larghezza.
+    Il flex: 1 nel CSS fa sì che questo blocco si espanda per
+    occupare tutto lo spazio disponibile, tenendo il footer in fondo.
+    ============================================================ -->
   <main class="container">
+
+    <!-- Hero -------------------------------------------------------
+      Banner di benvenuto con titolo, sottotitolo e bottone CTA
+      che rimanda al repository GitHub con il materiale storico.
+    --------------------------------------------------------------- -->
     <section class="hero">
       <h1>Esplora tutto il nostro materiale su GitHub</h1>
       <p>Raccolta, catalogazione e diffusione di materiale storico e storiografico per la comunità.</p>
-      <p><a class="cta" href="https://github.com/societa-storica-pinerolese/societastoricapinerolese-documents">Esplora il materiale</a></p>
-    </section>
-
-    <section class="intro">
-      <h2>Missione</h2>
-      <p>Crediamo che la storia locale sia un patrimonio condiviso, capace di rafforzare l’identità culturale e di offrire strumenti per comprendere il presente. 
-        Il nostro lavoro si fonda su rigore scientifico, apertura alla comunità e attenzione alla conservazione delle fonti
+      <p>
+        <a class="cta" href="https://github.com/societa-storica-pinerolese/societastoricapinerolese-documents">
+          Esplora il materiale
+        </a>
       </p>
     </section>
 
+    <!-- Missione ---------------------------------------------------
+      Breve paragrafo che descrive i valori e i principi
+      che guidano il lavoro della società.
+    --------------------------------------------------------------- -->
+    <section class="intro">
+      <h2>Missione</h2>
+      <p>
+        Crediamo che la storia locale sia un patrimonio condiviso, capace di rafforzare l'identità
+        culturale e di offrire strumenti per comprendere il presente. Il nostro lavoro si fonda su
+        rigore scientifico, apertura alla comunità e attenzione alla conservazione delle fonti.
+      </p>
+    </section>
+
+    <!-- Tre pilastri -----------------------------------------------
+      Griglia con le tre attività principali della società.
+      Il CSS usa auto-fit per adattarsi automaticamente
+      da tre colonne (desktop) a una colonna (mobile).
+    --------------------------------------------------------------- -->
     <section class="highlights">
+
       <article>
         <h3>Ricercare</h3>
-        <p>Promuoviamo ricerche storiche basate su fonti documentarie, archivistiche e bibliografiche, 
-          con particolare attenzione alle realtà locali, alle istituzioni civili e religiose, alle tradizioni e alle trasformazioni sociali del Pinerolese
+        <p>
+          Promuoviamo ricerche storiche basate su fonti documentarie, archivistiche e bibliografiche,
+          con particolare attenzione alle realtà locali, alle istituzioni civili e religiose,
+          alle tradizioni e alle trasformazioni sociali del Pinerolese.
         </p>
       </article>
+
       <article>
         <h3>Conservare</h3>
-        <p>Sosteniamo la tutela del patrimonio documentario e iconografico del territorio, collaborando con archivi, biblioteche, musei e istituzioni culturali</p>
+        <p>
+          Sosteniamo la tutela del patrimonio documentario e iconografico del territorio,
+          collaborando con archivi, biblioteche, musei e istituzioni culturali.
+        </p>
       </article>
+
       <article>
         <h3>Diffondere</h3>
-        <p>Rendiamo accessibili i risultati delle ricerche attraverso pubblicazioni, conferenze, incontri pubblici, attività divulgative e progetti digitali</p>
+        <p>
+          Rendiamo accessibili i risultati delle ricerche attraverso pubblicazioni, conferenze,
+          incontri pubblici, attività divulgative e progetti digitali.
+        </p>
       </article>
+
     </section>
+
   </main>
 
-  <footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="social-and-credit">
-      <div class="social-links" aria-label="Link ai social">
-        <a href="https://www.instagram.com/societastoricapinerolese/">
-          Instagram
-        </a>
-        <a href="https://www.linkedin.com/in/tuo-profilo">
-          Linkedin
-        </a>
-        <a href="https://github.com/societa-storica-pinerolese/societastoricapinerolese-documents">
-        GitHub  
-        </a>
-        <a href="https://www.facebook.com/p/Societa-storica-Pinerolese-100080433380857/">
-        Facebook  
-        </a>
-        <a href="mailto:societastorica.pin@gmail.com">
-          Email
-        </a>
-      </div>
 
-      <div class="site-credit">
-        <p>© 2026 Progetto Storiografico</p>
-        <p>Site realizzato e manutenuto da <strong>Alessandro Verduna</strong></p>
+  <!-- ============================================================
+    FOOTER
+    Barra inferiore con link ai social, email e crediti del sito.
+    Rimane sempre in fondo grazie al layout flex del body.
+    ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="social-and-credit">
+
+        <!-- Link ai canali social e contatti -->
+        <nav class="social-links" aria-label="Link ai social">
+          <a href="https://www.instagram.com/societastoricapinerolese/">Instagram</a>
+          <a href="https://www.linkedin.com/in/tuo-profilo">LinkedIn</a>
+          <a href="https://github.com/societa-storica-pinerolese/societastoricapinerolese-documents">GitHub</a>
+          <a href="https://www.facebook.com/p/Societa-storica-Pinerolese-100080433380857/">Facebook</a>
+          <a href="mailto:societastorica.pin@gmail.com">Email</a>
+        </nav>
+
+        <!-- Copyright e crediti dello sviluppatore -->
+        <div class="site-credit">
+          <p>© 2026 Progetto Storiografico</p>
+          <p>Sito realizzato e manutenuto da <strong>Alessandro Verduna</strong></p>
+        </div>
+
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
+
+  <!-- ============================================================
+    SCRIPT — Menu mobile
+    Aggiunge/rimuove la classe .open sul <nav> quando si clicca
+    il pulsante hamburger, mostrando o nascondendo il menu.
+    ============================================================ -->
   <script>
-    // Minimal mobile nav toggle
     const btn = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.main-nav');
+
     btn.addEventListener('click', () => {
       nav.classList.toggle('open');
     });
   </script>
+
 </body>
 </html>
