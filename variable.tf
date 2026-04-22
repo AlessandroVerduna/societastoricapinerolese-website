@@ -1,7 +1,7 @@
 variable "bucket" {
-  default = "societa-storica-pinerolese-website"
+  description = "Nome del bucket S3"
 }
 
 variable "domain_name" {
-  default = "societastoricapinerolese.it"
+  description = "Dominio del sito"
 }
