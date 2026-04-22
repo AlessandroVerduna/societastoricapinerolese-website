@@ -8,7 +8,7 @@ The site is fully serverless and served globally via AWS CloudFront, with infras
 
 ## About this project
 
-This project was built as part of my transition from humanities academia to cloud engineering.
+This project was built as part of my transition from humanities academia to cloud engineering [LinkedIn](https://www.linkedin.com/in/alessandro-verduna/).
 
 I hold a Bachelor's degree in History and a double Master's degree in Historical Sciences (University of Turin / Université Lyon 2). I am currently enrolled in the **AWS Cloud Architect** program at [ITS ICT Piemonte](https://www.its-ictpiemonte.it/corsi/aws-cloud-architect/).
 
@@ -80,4 +80,4 @@ S3 Bucket (origin — private, accessible only via OAC)
 
 **Alessandro Verduna**
 AWS Cloud Architect student @ ITS ICT Piemonte
-[GitHub](https://github.com/AlessandroVerduna) · [Email](mailto:alessandroverduna@gmail.com)
+[GitHub](https://github.com/AlessandroVerduna) · [Email](mailto:alessandroverduna@gmail.com) · [LinkedIn](https://www.linkedin.com/in/alessandro-verduna/)
