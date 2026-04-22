@@ -72,6 +72,9 @@ S3 Bucket (origin — private, accessible only via OAC)
 ├── variable.tf         # Input variable declarations
 ├── local.tf            # Local values
 ├── output.tf           # Outputs (nameservers, CloudFront URL, site URL)
+```
+
+---
 
 ## Author
 
